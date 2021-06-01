@@ -38,8 +38,16 @@ router.get('/:id', (req, res) => {
       ] 
 });
 
-router.post('/', (req, res) => {
-  // create a new category
+// create a new category
+router.post('/', (req, res) => { try{
+  const categoryData = await Category.create({
+    category_name: req.body.category_name
+  })
+
+  res.status(200).json(categoryData)
+}catch (err) {
+  res.status(500).json(err);
+}
 });
 
 router.put('/:id', (req, res) => {
