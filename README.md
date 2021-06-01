@@ -7,7 +7,9 @@
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Contributing](#Contributing)
+- [Video](#Video)
 - [Questions](#Questions)
+
 <br />
 
 # Description
@@ -33,6 +35,10 @@ SO THAT my company can compete with other e-commerce companies
 
 # Contributing
  None at this time 
+
+# Video
+
+Take a look at the functionality [here](https://www.youtube.com/watch?v=yJyUObVAZjw)
 
 # Questions
 
