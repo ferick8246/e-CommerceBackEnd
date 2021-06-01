@@ -25,6 +25,25 @@ router.get('/', (req, res) => {
 // be sure to include its associated Product data
 
 router.get('/:id', (req, res) => {
+  try{
+    const tagData = await Tag.findOne({
+      where: {
+        id: req.params.id
+      },
+      includes: [
+        {
+          model: Product,
+          attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
+        }
+      ]
+    })
+    if (!tagData) {
+      res.status(404).json({ message: 'No tag found'});
+    }
+    res.status(200).json(tagData)
+  }catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 // create a new tag
