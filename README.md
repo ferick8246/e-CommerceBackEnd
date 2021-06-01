@@ -12,7 +12,7 @@
 
 # Description
 
-I build the back end for an e-commerce site by modifying starter code. I configured a working Express.js API to use Sequelize to interact with a MySQL database.
+This project is the creation of the back end for an e-commerce site. This application used Express.js API and Sequelize to interact with a MySQL database. This application displays creation of database using mySQL with models and associations.
 
 # Technologies
 * JavaScript
